@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #0e0f12;
+    color: #fff;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    backdrop-filter: blur(5px);
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4cc9f0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4cc9f0;
+}
+
+/* HERO SECTION */
+header {
+    background: url('https://images.unsplash.com/photo-1535223289827-42f1e9919769') center/cover no-repeat;
+    height: 100vh;
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: #4cc9f0;
+    color: #000;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #3bb5d4;
+}
+
+/* ABOUT */
+.about, .services, .contact {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    color: #cfcfcf;
+}
+
+/* SERVICES */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #1a1c21;
+    width: 250px;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #22252b;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #4cc9f0;
+}
+
+.card p {
+    color: #cfcfcf;
+}
+
+/* CONTACT */
+.contact p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+    background: #0d0e11;
+    padding: 20px;
+    text-align: center;
+    color: #909090;
+    margin-top: 50px;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Future</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">TechFuture</div>
+            <ul>
+                <li><a href="#home">Ballina</a></li>
+                <li><a href="#about">Rreth</a></li>
+                <li><a href="#services">Shërbimet</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero" id="home">
+            <h1>E Ardhmja është Teknologji</h1>
+            <p>Inovacion • Inteligjencë Artificiale • Transformim Digjital</p>
+            <a href="#about" class="btn">Mëso më shumë</a>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <h2>Kush jemi ne?</h2>
+        <p>
+            TechFuture është një platformë e dedikuar për zhvillimin teknologjik
+            dhe inovacionin modern. Ne fokusohemi në inteligjencën artificiale,
+            robotikë, automatizim dhe teknologjitë e së ardhmes që ndryshojnë botën.
+        </p>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Shërbimet tona</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Inteligjencë Artificiale</h3>
+                <p>Modele të avancuara AI për automatizim dhe optimizim.</p>
+            </div>
+            <div class="card">
+                <h3>Robotikë</h3>
+                <p>Zgjidhje robotike për industri moderne dhe edukim.</p>
+            </div>
+            <div class="card">
+                <h3>Web & Software</h3>
+                <p>Zhvillim profesional i faqeve web dhe aplikacioneve.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Na kontaktoni</h2>
+        <p>Email: info@techfuture.com</p>
+        <p>Telefon: +355 68 000 0000</p>
+    </section>
+
+    <footer>
+        <p>© 2025 TechFuture — Të gjitha të drejtat të rezervuara.</p>
+    </footer>
+
+</body>
+</html>
